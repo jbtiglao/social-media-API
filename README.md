@@ -37,7 +37,7 @@ This is an API for a social network web application where users can share their 
   ## Installation
   * Clone my repository on GitHub.
 
-  * Open the file on Visual Studo Code. Create your  `.gitignore` file.
+  * Open the file on Visual Studio Code. Create your  `.gitignore` file.
   
   * Check the `package.json`. To set up all the existing npm packages, run `npm init`.
 
