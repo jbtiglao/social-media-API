@@ -1,8 +1,11 @@
 # Social Media API
 
-Unit 18, NoSQL Assignment
+Unit 18, NoSQL Assignment 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+(This is a working draft - project not yet submitted)
 
 
   ---
@@ -33,11 +36,25 @@ This is an API for a social network web application where users can share their 
   ---
   ## Installation
   * Clone my repository on GitHub.
-  * Run `npm init`
-  * Install MongoDB and Express on your machine
+
+  * Open the file on Visual Studo Code. Create your  `.gitignore` file.
+  
+  * Check the `package.json`. To set up all the existing npm packages, run `npm init`.
+
+  * To install the dependencies on the `node_modules` folder, run `npm install` or
+
+      * `npm i express` to install Express.js;
+      * `npm i mongoose` to install Mongoose; and 
+      * `npm i nodemon` to install Nodemon.
+
+
+  * Ensure that MongoDB is installed on your machine. If not, follow the instructions on the [MongoDB website](https://www.mongodb.com/docs/manual/installation/).
+
+  *(Note: If you're a Mac user, you may need to install MongoDB via Homebrew. There are a number of tutorials on YouTube, but the video that helped me troubleshoot my installation, after trying everything, was [this](https://www.youtube.com/watch?v=4crXgQZG4W8&t=40s). Prior to installation, you might also need to ensure that you have the current Node.js version (v.17).*
+
   * Invoke application using `npm start`
 
-  
+  * Open Insomnia to test the API routes.
   ---
   ## Usage
   Please see the demonstration video, description, and screenshots.
@@ -76,6 +93,7 @@ This is an API for a social network web application where users can share their 
   * UCI Boot Camp study materials and internet resources.
   * [MongoDB Documentation](https://www.mongodb.com/docs/manual/reference/connection-string/)
   * [Insomnia](https://insomnia.rest/)
+  * [How to Install MongoDB on Mac by MammothIntercative](https://www.youtube.com/watch?v=4crXgQZG4W8&t=40s)
 
   ---
   ## Author
