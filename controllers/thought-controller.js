@@ -1,4 +1,4 @@
-const { Thought, User } = require("../models");
+const { Thought, User } = require('../models');
 
 const thoughtController = {
   // Get all thoughts
@@ -19,7 +19,7 @@ const thoughtController = {
     Thought.findOne({ _id: req.params.thoughtId })
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          return res.status(404).json({ message: "No thought with this id!" });
+          return res.status(404).json({ message: 'No thought with this id!' });
         }
         res.json(dbThoughtData);
       })
@@ -41,10 +41,10 @@ const thoughtController = {
       })
       .then((dbUserData) => {
         if (!dbUserData) {
-          return res.status(404).json({ message: "Thought created but no user with this id!" });
+          return res.status(404).json({ message: 'Thought created but no user with this id!' });
         }
 
-        res.json({ message: "Thought sucessfully created!" });
+        res.json({ message: 'Thought sucessfully created!' });
       })
       .catch((err) => {
         console.log(err);
@@ -57,7 +57,7 @@ const thoughtController = {
     Thought.findOneAndUpdate({ _id: req.params.thoughtId }, { $set: req.body }, {runValidators: true, new: true})
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          return res.status(404).json({ message: "No thought with this id!" });
+          return res.status(404).json({ message: 'No thought with this id!' });
         }
         res.json(dbThoughtData);
       })
@@ -72,7 +72,7 @@ const thoughtController = {
     Thought.findOneAndRemove({ _id: req.params.thoughtId })
       .then((dbThoughtData) => {
         if (!dbThoughtDatat) {
-          return res.status(404).json({ message: "No thought with this id!" });
+          return res.status(404).json({ message: 'No thought with this id!' });
         }
 
         // Remove thought id from user's `thoughts` field
@@ -103,7 +103,7 @@ const thoughtController = {
     )
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
-          return res.status(404).json({ message: "No thought with this id!" });
+          return res.status(404).json({ message: 'No thought with this id!' });
         }
         res.json(dbThoughtData);
       })
