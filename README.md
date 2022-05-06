@@ -79,36 +79,28 @@ A user can utilize this API to create a new user with a valid username and email
 
   5. When the API POST and DELETE routes are tested in Insomnia, the user can sucessfully create and delete reactions to thoughts, and add and remove friends to a user's friend list.
 
-### API Routes
- **`/api/users`**
-  * `GET` all users
-  * `POST` a new user
+### Objects and API Routes
+ 📁 **USER**
+  * Create a new user:  `POST /api/users`
+  * Get all users: `GET /api/users`
+  * Get a single user by its `id`: `GET /api/user:userId`
+  * Update a user by its `id`: `PUT /api/user:userId`
+  * Delete a user by its `id`: `DEL /api/user:userId`
 
-  **`/api/users/:userId`**
-  * `GET` a single user by its `id`
-  * `PUT` to update a user by its `id`
-  * `DELETE` to remove a user by its `id`
+ 📁 **FRIEND**
+  * Add a new friend to a user's friend list: `POST /api/users/:userid/friends/:friendId`
+  * Delete a friend from a user's friend list: `DEL /api/users/:userid/friends/:friendId`
 
-  **`/api/users/:userid/friends/:friendId`**
-  * `POST` to add a new friend to a user's friend list
-  * `DELETE` to remove a friend from a user's friend list
+📁 **THOUGHT**
+  * Create a new thought: `POST /api/thoughts/`
+  * Get all thoughts: `GET /api/thoughts/`
+  * Get a single thought by its `id`: `GET /api/thoughts/:thoughtId`
+  * Update a thought by its `id`: `PUT /api/thoughts/:thoughtId`
+  * Delete a thought by its `id`: `DEL /api/thoughts/:thoughtId`
 
-  **`/api/thoughts`**
-  * `GET` to get all thoughts
-  * `POST` to create a new thought
-
-  **`/api/thoughts/:thoughtId`**
-  * `GET` to get a single thought by its `id`
-  * `PUT` to update a thought by its `id`
-  * `DELETE` to remove a thought by its `id`
-
-  **`/api/thoughts/:thoughtId/reactions`**
-  * `POST` to create a reaction
-
-  **`/api/thoughts/:thoughtId/reactions/:reactionId`**
-  * `DELETE` to remove a reaction by the `reactionId`
-
-
+📁 **REACTION**
+  * Create a reaction: `POST /api/thoughts/:thoughtId/reactions`
+  * Delete a reaction by the `reactionId`: `DEL /api/thoughts/:thoughtId/reactions/:reactionId`
 
 --- 
  ## Technologies
@@ -134,11 +126,10 @@ A user can utilize this API to create a new user with a valid username and email
 
   ---
   ## Tests
-  Use Insomnia to test RESTful API calls.
+  Insomnia is used to test RESTful API calls.
 
-  See Usage and API Routes.
+  Please see the demonstration video, as well as the sections on Usage, Features and Functionalities, and objects and API Routes.
   
-
   ---
   ## Credits
   The following applications and resources were consulted and/or utilized in the development of this application:
