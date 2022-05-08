@@ -77,7 +77,7 @@ const thoughtController = {
   deleteThought(req, res) {
     Thought.findOneAndRemove({ _id: req.params.thoughtId })
       .then((dbThoughtData) => {
-        if (!dbThoughtDatat) {
+        if (!dbThoughtData) {
           return res.status(404).json({ message: "No thought with this id!" });
         }
 
