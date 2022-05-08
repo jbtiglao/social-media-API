@@ -1,4 +1,4 @@
-# Social Media API
+# Social Media API 👥
 
 Unit 18, NoSQL Assignment 
 
@@ -9,7 +9,7 @@ Unit 18, NoSQL Assignment
 
 
   ---
-  ## Description
+  ## Description 📌
 
 This is an API for a social network web application where users can share their thoughts, react to friends' thoughts, and create a friend list. It uses Express.js for routing, a MongoDB database, the Mongoose ODM, and native JavaScript Date object to format timestamps. The seed data is created using Insomnia.  
 
@@ -20,7 +20,7 @@ To see how the API works using Insomnia, see the **walk through demonstration** 
 While the application **files** can be accessed on my [GitHub Repository](https://github.com/jbtiglao/social-media-API).
 
   ---
-  ## Table of Contents
+  ## Table of Contents 📌
   1. [Title](#title)
   2. [Description](#description)
   3. [Installation](#installation)
@@ -34,7 +34,7 @@ While the application **files** can be accessed on my [GitHub Repository](https:
   11. [Questions](#questions)
   
   ---
-  ## Installation
+  ## Installation 📌
   * Clone my repository on GitHub.
 
   * On Visual Studio Code:
@@ -65,7 +65,7 @@ While the application **files** can be accessed on my [GitHub Repository](https:
 
   * To create seed data and test the API routes, open Insomnia. Also, see Test below.
   ---
-  ## Usage
+  ## Usage 📌
 A user can utilize this API to create a new user with a valid username and email, add other users as friends, post "thoughts" as well as "reactions" to thoughts, update and delete thoughts and reactions, and delete friends.
   ### Features and Functionalities
 
@@ -77,15 +77,19 @@ A user can utilize this API to create a new user with a valid username and email
 
   4. When the API POST, PUT, and DELETE routes are tested in Insomnia, the user can successfully create, update, and delete users and thoughts in the user's database.
 
-  5. When the API POST and DELETE routes are tested in Insomnia, the user can sucessfully create and delete reactions to thoughts, and add and remove friends to a user's friend list.
+  5. When the API POST and DELETE routes are tested in Insomnia, the user can successfully create and delete reactions to thoughts, and add and remove friends to a user's friend list.
 
-### Objects and API Routes
+### API Routes
+On Insomnia, the following API routes have been created and used to add, update, or remove users, friends, thoughts, and reactions in the user's database. 
+
  📁 **USER**
   * Create a new user:  `POST /api/users`
   * Get all users: `GET /api/users`
-  * Get a single user by its `id`: `GET /api/user:userId`
-  * Update a user by its `id`: `PUT /api/user:userId`
-  * Delete a user by its `id`: `DEL /api/user:userId`
+  * Get a single user by its `id`: `GET /api/users/:userId`
+
+  * Update a user by its `id`: `PUT /api/users/:userId`
+
+  * Delete a user by its `id`: `DEL /api/user/:userId`
 
  📁 **FRIEND**
   * Add a new friend to a user's friend list: `POST /api/users/:userid/friends/:friendId`
@@ -103,7 +107,7 @@ A user can utilize this API to create a new user with a valid username and email
   * Delete a reaction by the `reactionId`: `DEL /api/thoughts/:thoughtId/reactions/:reactionId`
 
 --- 
- ## Technologies
+ ## Technologies 📌
   * JavaScript
   * Node.js
   * Express.js
@@ -112,7 +116,7 @@ A user can utilize this API to create a new user with a valid username and email
   * Insomnia
 
   ---
-  ## License
+  ## License 📌
   License used for this project - MIT
   
   For more information on the above license, please see the following websites:  
@@ -120,18 +124,18 @@ A user can utilize this API to create a new user with a valid username and email
   - [Choose a License](https://choosealicense.com/)
 
   ---
-  ## Contributing
+  ## Contributing 📌
   To contribute to this application: 
   Please email the author for guidelines.
 
   ---
-  ## Tests
-  Insomnia is used to test RESTful API calls.
+  ## Tests 📌
+  Insomnia is used to test REST API calls.
 
-  Please see the demonstration video, as well as the sections on Usage, Features and Functionalities, and objects and API Routes.
+  Please see the demonstration video, as well as the sections on Usage, Features and Functionalities, and API Routes.
   
   ---
-  ## Credits
+  ## Credits 📌
   The following applications and resources were consulted and/or utilized in the development of this application:
   
   * UCI Boot Camp study materials and internet resources.
@@ -140,11 +144,11 @@ A user can utilize this API to create a new user with a valid username and email
   * [How to Install MongoDB on Mac by MammothInteractive](https://www.youtube.com/watch?v=4crXgQZG4W8&t=40s)
 
   ---
-  ## Author
+  ## Author 📌
   Jane Tiglao
 
   ---
-  ## Questions
+  ## Questions 📌 
   For questions or issues, please contact: 
   - Jane Tiglao 
   - Email: janeytiglao@gmail.com
