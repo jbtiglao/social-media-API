@@ -9,6 +9,10 @@ Unit 18, NoSQL Assignment
 
 This is an API for a social network web application where users can share their thoughts, react to friends' thoughts, and create a friend list. It uses Express.js for routing, a MongoDB database, the Mongoose ODM, and native JavaScript Date object to format timestamps. The seed data is created using Insomnia.  
 
+
+<img width="1380" alt="image1_social-media-api-insomnia" src="https://user-images.githubusercontent.com/94569484/167376248-b824a670-d62a-49bc-b1f1-b6d3c8836e5c.png">
+
+
 To see how the API works using Insomnia, see the **walk through demonstration videos** here:
 
 * [User Routes](https://drive.google.com/file/d/1vATUYGYqmK8ixaTrdq78J7NV95eTX112/view)
@@ -62,63 +66,112 @@ While the application **files** can be accessed on my [GitHub Repository](https:
       
       * Open MongoDB and connect to the MongoDB URI `mongodb://localhost:27017`. On the list of databases, click on `socialmedia` to see `thoughts` and `users` data. 
 
+<img width="1358" alt="image2_mongodb-connect" src="https://user-images.githubusercontent.com/94569484/167376510-257e4b41-eefa-4e62-afea-6180f395c08d.png">
+
+
   * To create seed data and test the API routes, open Insomnia. Also, see the Tests section below.
+  
   ---
   ## Usage 📌
 A user can utilize this API to create a new user with a valid username and email, add other users as friends, post "thoughts" as well as "reactions" to thoughts, update and delete thoughts and reactions, and delete friends.
 
-  ### Features and Functionalities 🔌
+ 🔌 ### Features and Functionalities 
 
   1. This is a social network API that uses MongoDB, a NoSQL database, which allows the website to handle large amounts of unstructured data.
 
   2. When the command to invoke the application is entered, the Mongoose models are synced to the MongoDB database.
 
+<img width="1384" alt="image3_mongodb-database" src="https://user-images.githubusercontent.com/94569484/167377164-9904befa-c198-4230-9f0b-d228d28682f8.png">
+
   3. When API GET routes for users and thoughts are opened in Insomnia, the data for each of the routes is displayed in formatted JSON.
-  
+
   4. **User**, **Friend**, **Thought**, and **Reaction** routes are created to create the database and test the API on Insomnia.
-  
+
+<img width="243" alt="image4_routes" src="https://user-images.githubusercontent.com/94569484/167378910-d15f2882-3858-489d-9ccc-2dc3145f009d.png">
+
   5. **User Routes** - a user can create a user with a username and valid email address. When created, the user is assigned a unique user ID. 
 
       * To create a user, click the `POST` request and enter the user's username and email address. Click Send.
 
+<img width="1390" alt="image5_create-user" src="https://user-images.githubusercontent.com/94569484/167379026-7b30c0dd-2f05-4e5f-a3e8-704f916e6305.png">
+
+
       * There are two `GET` requests that return user information:
 
           - To return all users, click the `GET All Users` request, then click on Send.
+          
+          <img width="1383" alt="image6_get-all-users" src="https://user-images.githubusercontent.com/94569484/167379384-ecdc04d2-abf4-4d5f-8a0c-135232134db1.png">
 
-          - To return a single user, click the `GET a User by Id` request. On the URL, enter the user's ID. E.g., `localhost:3001/api/users/:userId`. 
-      
+
+          - To return a single user, click the `GET a User by Id` request. On the URL, enter the user's ID. 
+          
+          <img width="1389" alt="image7_get-single-user-id" src="https://user-images.githubusercontent.com/94569484/167379661-7c0a312b-0bff-4b75-b254-73932154ed87.png">
+
+          
       * To update a user by ID, click the `PUT` request. On the URL, enter the ID of the user whose information is going to be updated.
+      
+      <img width="1385" alt="image8_update-user" src="https://user-images.githubusercontent.com/94569484/167380268-36081aad-4ce3-4ffa-b9bb-35ec5814e4b1.png">
+
 
       * To delete a user by ID, click the `DEL` request and enter the user's ID. 
       
       * A message that reads, `"User and associated thoughts deleted!"` will appear if the user has been deleted from the database. If there is no such user or user ID in the system, the message, `"No user with this id!"` is shown.
+      
+      
+<img width="1387" alt="image9_delete-user" src="https://user-images.githubusercontent.com/94569484/167380622-cc5fd326-0103-4d7e-9336-f5f9d2ddd5d5.png">
+John's user ID is entered on the URL.
+
+      * Click `GET All Users` to see if the user has been deleted. 
+      
+      <img width="1387" alt="image10_john-is-deleted" src="https://user-images.githubusercontent.com/94569484/167380956-ebd96a22-a7cc-4304-bad3-1c7a4acf6c48.png">
 
 
   6. **Friend Routes** - a user can add a friend and delete a friend.
 
-      * To add a friend, click the `POST` request. On the URL enter the user ID of the user who is adding a friend, then the user ID of the friend the user is adding. E.g., `localhost:3001/api/users/:userId/friends/:friendId`. *(Note: Please see the section on Tests for the API routes.)*
+      * To add a friend, click the `POST` request. On the URL enter the user ID of the user who is adding a friend, then the user ID of the friend the user is adding. *(Note: Please see the section on Tests for the API routes.)*
+
+<img width="1385" alt="image11_add-friend" src="https://user-images.githubusercontent.com/94569484/167381456-751eb857-499d-44c9-b8aa-03ed509698be.png">
 
       * To see the user's friends, click `GET All Users`. The ID of the friends the user added are listed under `"friends"`. The `"friendCount"` indicates the number of friends the user added.
 
-      * To remove or delete a friend, click the `DEL` request. On the URL, enter the friend's ID. E.g., `localhost:3001/api/users/:userId/friends/friendId`.
+      * To remove or delete a friend, click the `DEL` request. On the URL, enter the friend's ID. E.g., 
+      
+      <img width="1385" alt="image12_delete-friend" src="https://user-images.githubusercontent.com/94569484/167381968-673d7f76-5982-4111-a19e-80abd4125fcf.png">
+
+      * To check if the friend has been removed from the user's friend list, click `GET All Users`.
+      
+<img width="1390" alt="image13_deleted-friend" src="https://user-images.githubusercontent.com/94569484/167382228-b6a284e0-7fcb-4070-9ad8-d816195b6388.png">
 
 
   7. **Thought Routes** - a user can create a thought, get all thoughts or a single thought by ID, update a thought by ID, and delete a thought by ID.
 
       * To create or add a thought, click the `POST` request. Enter the `"thoughtText"`, `"username"`, `"userID"` of the user creating the thought.
-
+      
+      <img width="1385" alt="image14_create-thought" src="https://user-images.githubusercontent.com/94569484/167382476-fbdee05c-d84a-4c28-92f7-cf29efbd7d75.png">
+     
       * To get all thoughts, click the `GET All Thoughts` request. All the thoughts that were created will appear, as well as the date and time they were created. 
       
         - Each created thought is assigned a unique thought ID. 
 
         - Click `GET All Users` to access the thought ID. 
 
+
+![image17_get-all-users-thoughtId](https://user-images.githubusercontent.com/94569484/167384643-394f3e4e-5340-404b-b3b1-9a04dfdcd98c.png)
+
       * To get a thought by ID, click the `GET a Thought by Id` request and enter the thought ID.
 
       * To update a thought, click the `PUT` request. On the URL, enter the thought ID. Enter the necessary changes on the text body. To see the changes, click `GET All Thoughts`. 
 
-      * To delete a thought by ID, click the `DEL` request. On the URL, enter the thought ID that will be deleted.
+<img width="1367" alt="image15_update-thought" src="https://user-images.githubusercontent.com/94569484/167383563-4dc8e2c4-23b3-46ea-a0bb-a8524d114370.png">
 
+![image16_get-all-thoughts-updated](https://user-images.githubusercontent.com/94569484/167383848-fbed8b48-e5fb-4771-93a6-1f35eceae10c.png)
+
+      * To delete a thought by ID, click the `DEL` request. On the URL, enter the thought ID that will be deleted.
+      
+      <img width="1389" alt="image18_thought-deleted" src="https://user-images.githubusercontent.com/94569484/167385302-6e1a1e92-3876-4f59-9f62-44a0279f4890.png">
+
+      * When the thought is successfully deleted, the text can no longer be found when you try to access it by clicking `GET All Thoughts.` The thought ID is also deleted when you click `GET All Users.`
+      
       * The following messages will appear upon creation, update, or deletion of a thought:
 
        - `"Thought successfully created!"` - if the thought is successfully created and associated with a user ID.
@@ -131,11 +184,20 @@ A user can utilize this API to create a new user with a valid username and email
 
   8. **Reaction Routes** - a user can create a reaction and delete a reaction.
 
-      * To create a reaction, click the `POST` request. On the URL, enter the ID of the thought the user is reacting or commenting on. E.g., `localhost:3001/api/thoughts/:thoughtID/reactions.` Then enter the `"reactionBody"` and `"username"` of the user creating the reaction.
+      * To create a reaction, click the `POST` request. On the URL, enter the ID of the thought the user is reacting or commenting on. Then enter the `"reactionBody"` and `"username"` of the user creating the reaction.
+      
+<img width="1387" alt="image18_create-reaction" src="https://user-images.githubusercontent.com/94569484/167386074-99f8df62-e5cd-4d33-b6d4-4b7cd43916b4.png">
+
 
       * Click on `GET All Thoughts`to see the reaction, the username of the user who created the reaction, the reaction ID, date and time the reaction is created, and the user's reaction count. This request will also show if the reaction has been deleted from the user's list. 
+      
+      <img width="1374" alt="image20_get-all-thoughts-reactions" src="https://user-images.githubusercontent.com/94569484/167386319-f5c3dee9-43b7-405c-8aa9-04dc8b024064.png">
+
 
       * To delete a reaction, click the `DEL` request. On the URL, enter the ID of the thought the user created a reaction or commented on, then the reaction ID.  
+      
+      
+<img width="1386" alt="image21_delete-reaction" src="https://user-images.githubusercontent.com/94569484/167387273-a7b9f65f-c237-44a2-b8a3-3abd444a2f3c.png">
 
       * The message, `"No thought with this id!"` will appear when a reaction is deleted or a reaction is not associated with a user ID. 
   
@@ -173,7 +235,7 @@ A user can utilize this API to create a new user with a valid username and email
   5. When the API POST and DELETE routes are tested in Insomnia, the user can successfully create and delete reactions to thoughts, and add and remove friends to a user's friend list.
   
   The following API routes are created to add and test data:
-  ### API Routes 🔌
+ 🔌 ### API Routes 
 On Insomnia, the following API routes have been created and used to add, update, or remove users, friends, thoughts, and reactions in the user's database. 
 
  📁 **USER**
