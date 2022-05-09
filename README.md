@@ -13,7 +13,7 @@ This is an API for a social network web application where users can share their 
 <img width="1380" alt="image1_social-media-api-insomnia" src="https://user-images.githubusercontent.com/94569484/167376248-b824a670-d62a-49bc-b1f1-b6d3c8836e5c.png">
 
 
-To see how the API works using Insomnia, see the **walk through demonstration videos** here:
+To see how the API works using Insomnia, see the **walk-through demonstration videos** here:
 
 * [User Routes](https://drive.google.com/file/d/1vATUYGYqmK8ixaTrdq78J7NV95eTX112/view)
 * [Friend Routes](https://drive.google.com/file/d/1dgRadPEfgyq9ELoz-bKzoqlW6SU-Q1bd/view)
