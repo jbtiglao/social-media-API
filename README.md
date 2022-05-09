@@ -58,9 +58,9 @@ While the application **files** can be accessed on my [GitHub Repository](https:
       
       * *Note: If you're a Mac user and you're using an older version of Mac, you may need to install MongoDB via Homebrew. There are a number of tutorials on YouTube, but the video that helped me troubleshoot my installation, after trying everything else, was [this](https://www.youtube.com/watch?v=4crXgQZG4W8&t=40s).* 
 
-      * *Prior to installation, you might also need to ensure that you have the current Node.js version (at least Version 17.0).*
+      * *Prior to installation, you might also need to ensure that you have the current Node.js version (at least Version 17.0).**
 
-  * To invoke the application, run `npm start`.
+      * To invoke the application, run `npm start`.
 
       * When the server is started, the Mongoose models are synched to the MongoDB database.
       
@@ -80,8 +80,10 @@ A user can utilize this API to create a new user with a valid username and email
   1. This is a social network API that uses MongoDB, a NoSQL database, which allows the website to handle large amounts of unstructured data.
 
   2. When the command to invoke the application is entered, the Mongoose models are synced to the MongoDB database.
+  
 
 <img width="1384" alt="image3_mongodb-database" src="https://user-images.githubusercontent.com/94569484/167377164-9904befa-c198-4230-9f0b-d228d28682f8.png">
+
 
   3. When API GET routes for users and thoughts are opened in Insomnia, the data for each of the routes is displayed in formatted JSON.
 
@@ -92,22 +94,19 @@ A user can utilize this API to create a new user with a valid username and email
   5. **User Routes** - a user can create a user with a username and valid email address. When created, the user is assigned a unique user ID. 
 
       * To create a user, click the `POST` request and enter the user's username and email address. Click Send.
+      * 
 
 <img width="1390" alt="image5_create-user" src="https://user-images.githubusercontent.com/94569484/167379026-7b30c0dd-2f05-4e5f-a3e8-704f916e6305.png">
 
 
-      * There are two `GET` requests that return user information:
-
-          - To return all users, click the `GET All Users` request, then click on Send.
+      * There are two `GET` requests that return user information. To return all users, click the `GET All Users` request, then click on Send. To return a single user, click the `GET a User by Id` request. On the URL, enter the user's ID. 
           
-          <img width="1383" alt="image6_get-all-users" src="https://user-images.githubusercontent.com/94569484/167379384-ecdc04d2-abf4-4d5f-8a0c-135232134db1.png">
+     
+     <img width="1383" alt="image6_get-all-users" src="https://user-images.githubusercontent.com/94569484/167379384-ecdc04d2-abf4-4d5f-8a0c-135232134db1.png">
 
+      <img width="1389" alt="image7_get-single-user-id" src="https://user-images.githubusercontent.com/94569484/167379661-7c0a312b-0bff-4b75-b254-73932154ed87.png">
 
-          - To return a single user, click the `GET a User by Id` request. On the URL, enter the user's ID. 
-          
-          <img width="1389" alt="image7_get-single-user-id" src="https://user-images.githubusercontent.com/94569484/167379661-7c0a312b-0bff-4b75-b254-73932154ed87.png">
-
-          
+         
       * To update a user by ID, click the `PUT` request. On the URL, enter the ID of the user whose information is going to be updated.
       
       <img width="1385" alt="image8_update-user" src="https://user-images.githubusercontent.com/94569484/167380268-36081aad-4ce3-4ffa-b9bb-35ec5814e4b1.png">
@@ -149,11 +148,7 @@ John's user ID is entered on the URL.
       
       <img width="1385" alt="image14_create-thought" src="https://user-images.githubusercontent.com/94569484/167382476-fbdee05c-d84a-4c28-92f7-cf29efbd7d75.png">
      
-      * To get all thoughts, click the `GET All Thoughts` request. All the thoughts that were created will appear, as well as the date and time they were created. 
-      
-        - Each created thought is assigned a unique thought ID. 
-
-        - Click `GET All Users` to access the thought ID. 
+      * To get all thoughts, click the `GET All Thoughts` request. All the thoughts that were created will appear, as well as the date and time they were created. Each created thought is assigned a unique thought ID. Click `GET All Users` to access the thought ID. 
 
 
 ![image17_get-all-users-thoughtId](https://user-images.githubusercontent.com/94569484/167384643-394f3e4e-5340-404b-b3b1-9a04dfdcd98c.png)
