@@ -20,7 +20,7 @@ To see how the API works using Insomnia, see the **walk through demonstration vi
 * [Thought Routes](https://drive.google.com/file/d/1bSaxRDOr6DB3RVDTEBH2RXNu-fdMkEJ2/view)
 * [Reaction Routes](https://drive.google.com/file/d/10Pfe7YwvYndorHrBQNautqRnRgqSQzhM/view)
 
-While the application **files** can be accessed on my [GitHub Repository](https://github.com/jbtiglao/social-media-API).
+The application **files** can be accessed on my [GitHub Repository](https://github.com/jbtiglao/social-media-API).
 
   ---
   ## Table of Contents 📌
@@ -100,8 +100,6 @@ A user can utilize this API to create a new user with a valid username and email
 
   * There are two `GET` requests that return user information. To return all users, click the `GET All Users` request, then click on Send. To return a single user, click the `GET a User by Id` request. On the URL, enter the user's ID. 
           
-     <img width="1383" alt="image6_get-all-users" src="https://user-images.githubusercontent.com/94569484/167388708-bb5442b8-ae96-4b57-a843-fe50ad638190.png">
-
 
 <img width="1389" alt="image7_get-single-user-id" src="https://user-images.githubusercontent.com/94569484/167388751-ba7220b2-b3dc-48fc-80fd-b0e73ff44003.png">
 
@@ -119,8 +117,6 @@ A user can utilize this API to create a new user with a valid username and email
   <img width="1387" alt="image9_delete-user" src="https://user-images.githubusercontent.com/94569484/167388824-b13b966e-b833-46cc-a18f-8b4853e24482.png">
 
   * Click `GET All Users` to see if the user has been deleted. 
-      
-<img width="1387" alt="image10_john-is-deleted" src="https://user-images.githubusercontent.com/94569484/167388869-e827a7a1-164f-480a-82f3-f10348e65f3c.png">
 
   6. **Friend Routes** - a user can add a friend and delete a friend.
 
@@ -131,26 +127,17 @@ A user can utilize this API to create a new user with a valid username and email
 
   * To see the user's friends, click `GET All Users`. The ID of the friends the user added are listed under `"friends"`. The `"friendCount"` indicates the number of friends the user added.
 
-  * To remove or delete a friend, click the `DEL` request. On the URL, enter the friend's ID. E.g., 
+  * To remove or delete a friend, click the `DEL` request. On the URL, enter the friend's ID. 
       
 <img width="1385" alt="image12_delete-friend" src="https://user-images.githubusercontent.com/94569484/167388958-30af7391-e9b0-4f9c-a2be-b54fe8f9b803.png">
 
-
   * To check if the friend has been removed from the user's friend list, click `GET All Users`.
-      
-
-<img width="1390" alt="image13_deleted-friend" src="https://user-images.githubusercontent.com/94569484/167388985-9e24f636-c5b7-432b-b231-5f268d6e691b.png">
-
 
   7. **Thought Routes** - a user can create a thought, get all thoughts or a single thought by ID, update a thought by ID, and delete a thought by ID.
 
   * To create or add a thought, click the `POST` request. Enter the `"thoughtText"`, `"username"`, `"userID"` of the user creating the thought.
-      
-  <img width="1385" alt="image14_create-thought" src="https://user-images.githubusercontent.com/94569484/167389043-99bbab54-8548-47f8-8ba9-2fd05349d5dc.png">
 
   * To get all thoughts, click the `GET All Thoughts` request. All the thoughts that were created will appear, as well as the date and time they were created. Each created thought is assigned a unique thought ID. Click `GET All Users` to access the thought ID. 
-
-<img width="1377" alt="image17_get-all-users-thoughtId" src="https://user-images.githubusercontent.com/94569484/167389214-19aafda4-2d42-4162-838e-c15799b853ac.png">
 
   * To get a thought by ID, click the `GET a Thought by Id` request and enter the thought ID.
 
@@ -158,14 +145,7 @@ A user can utilize this API to create a new user with a valid username and email
 
 <img width="1367" alt="image15_update-thought" src="https://user-images.githubusercontent.com/94569484/167389182-0abd3b7b-4f38-4d43-b122-775d0ae1bb8b.png">
 
-<img width="1384" alt="image16_get-all-thoughts-updated" src="https://user-images.githubusercontent.com/94569484/167389245-c81c51ff-0c2c-4eb5-917d-ebbb79537397.png">
-
-
 * To delete a thought by ID, click the `DEL` request. On the URL, enter the thought ID that will be deleted.
-      
-
-<img width="1389" alt="image18_thought-deleted" src="https://user-images.githubusercontent.com/94569484/167389397-33baae83-f265-420e-afeb-86b249d92c99.png">
-
 
 * When the thought is successfully deleted, the text can no longer be found when you try to access it by clicking `GET All Thoughts.` The thought ID is also deleted when you click `GET All Users.`
       
@@ -193,9 +173,6 @@ A user can utilize this API to create a new user with a valid username and email
 
   * To delete a reaction, click the `DEL` request. On the URL, enter the ID of the thought the user created a reaction or commented on, then the reaction ID.  
       
-  <img width="1386" alt="image21_delete-reaction" src="https://user-images.githubusercontent.com/94569484/167389559-f612e303-6696-4052-a9c9-5ec8e1b0e66b.png">
-
-
   * The message, `"No thought with this id!"` will appear when a reaction is deleted or a reaction is not associated with a user ID. 
   
 --- 
