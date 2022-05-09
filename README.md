@@ -11,13 +11,10 @@ This is an API for a social network web application where users can share their 
 
 To see how the API works using Insomnia, see the **walk through demonstration videos** here:
 
-* [User Routes](https://drive.google.com/file/d/1vATUYGYqmK8ixaTrdq78J7NV95eTX112/view)(Download the video)
-
-* [Friend Routes](https://drive.google.com/file/d/1dgRadPEfgyq9ELoz-bKzoqlW6SU-Q1bd/view)(Download the video)
-
-* [Thought Routes](https://drive.google.com/file/d/1bSaxRDOr6DB3RVDTEBH2RXNu-fdMkEJ2/view)(Download the video)
-
-* [Reaction Routes](https://drive.google.com/file/d/10Pfe7YwvYndorHrBQNautqRnRgqSQzhM/view)(Download the video)
+* [User Routes](https://drive.google.com/file/d/1vATUYGYqmK8ixaTrdq78J7NV95eTX112/view)
+* [Friend Routes](https://drive.google.com/file/d/1dgRadPEfgyq9ELoz-bKzoqlW6SU-Q1bd/view)
+* [Thought Routes](https://drive.google.com/file/d/1bSaxRDOr6DB3RVDTEBH2RXNu-fdMkEJ2/view)
+* [Reaction Routes](https://drive.google.com/file/d/10Pfe7YwvYndorHrBQNautqRnRgqSQzhM/view)
 
 While the application **files** can be accessed on my [GitHub Repository](https://github.com/jbtiglao/social-media-API).
 
