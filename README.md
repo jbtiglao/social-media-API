@@ -89,8 +89,6 @@ A user can utilize this API to create a new user with a valid username and email
 
   4. **User**, **Friend**, **Thought**, and **Reaction** routes are created to create the database and test the API on Insomnia.
 
-<img width="243" alt="image4_routes" src="https://user-images.githubusercontent.com/94569484/167378910-d15f2882-3858-489d-9ccc-2dc3145f009d.png">
-
   5. **User Routes** - a user can create a user with a username and valid email address. When created, the user is assigned a unique user ID. 
 
   * To create a user, click the `POST` request and enter the user's username and email address. Click Send.
