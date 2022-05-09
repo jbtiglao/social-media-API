@@ -153,7 +153,7 @@ A user can utilize this API to create a new user with a valid username and email
       
     - `"Thought successfully deleted!"` - if the thought is deleted from the database.
        
-    - `"No thought with this ID!"` if there is no thought associated with the ID in the database.
+    - `"No thought with this ID!"` - if there is no thought associated with the ID in the database.
        
     - `"Thought created but no user with this id!"` - if a thought is created but no user ID is associated with it.
 
