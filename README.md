@@ -199,14 +199,14 @@ A user can utilize this API to create a new user with a valid username and email
   ## Tests 📌
   Insomnia is used to test REST API calls. Please see the walk-through demonstration videos as well as the sections on Description and Usage to see how data is added and tested using Insomnia. 
 
-  When the API GET routes for users and thoughts are opened in Insomnia, the data for each of the routes is displayed in formatted JSON.
+  1. When the API GET routes for users and thoughts are opened in Insomnia, the data for each of the routes is displayed in formatted JSON.
 
-  4. When the API POST, PUT, and DELETE routes are tested in Insomnia, the user can successfully create, update, and delete users and thoughts in the user's database.
+  2. When the API POST, PUT, and DELETE routes are tested in Insomnia, the user can successfully create, update, and delete users and thoughts in the user's database.
 
-  5. When the API POST and DELETE routes are tested in Insomnia, the user can successfully create and delete reactions to thoughts, and add and remove friends to a user's friend list.
+  3. When the API POST and DELETE routes are tested in Insomnia, the user can successfully create and delete reactions to thoughts, and add and remove friends to a user's friend list.
   
   The following API routes are created to add and test data:
- 🔌 ### API Routes 
+ ### API Routes 🔌 
 On Insomnia, the following API routes have been created and used to add, update, or remove users, friends, thoughts, and reactions in the user's database. 
 
  📁 **USER**
