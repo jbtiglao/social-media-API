@@ -172,7 +172,15 @@ A user can utilize this API to create a new user with a valid username and email
   * To delete a reaction, click the `DEL` request. On the URL, enter the ID of the thought the user created a reaction or commented on, then the reaction ID.  
       
   * The message, `"No thought with this id!"` will appear when a reaction is deleted or a reaction is not associated with a user ID. 
+
+9. MongoDB - After creating data on Insomnia, MongoDB also reflects the same data and changes that were made:
+
+<img width="1180" alt="image22_mongodb-updated" src="https://user-images.githubusercontent.com/94569484/167400268-3f2927f2-c08d-4af5-9119-973e20ab13f2.png">
+
+  <img width="1184" alt="image23_mongoDB-users" src="https://user-images.githubusercontent.com/94569484/167400369-8f417adf-607d-4992-b813-051871a81483.png">
   
+<img width="1182" alt="image24_mongoDB-thoughts" src="https://user-images.githubusercontent.com/94569484/167400472-50eb642e-a4af-4145-af64-5d1be37fad2e.png">
+
 --- 
  ## Technologies 📌
   * JavaScript
@@ -206,6 +214,7 @@ A user can utilize this API to create a new user with a valid username and email
   3. When the API POST and DELETE routes are tested in Insomnia, the user can successfully create and delete reactions to thoughts, and add and remove friends to a user's friend list.
   
   The following API routes are created to add and test data:
+  
  ### API Routes 🔌 
 On Insomnia, the following API routes have been created and used to add, update, or remove users, friends, thoughts, and reactions in the user's database. 
 
