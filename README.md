@@ -94,76 +94,80 @@ A user can utilize this API to create a new user with a valid username and email
   5. **User Routes** - a user can create a user with a username and valid email address. When created, the user is assigned a unique user ID. 
 
       * To create a user, click the `POST` request and enter the user's username and email address. Click Send.
-      * 
 
 <img width="1390" alt="image5_create-user" src="https://user-images.githubusercontent.com/94569484/167379026-7b30c0dd-2f05-4e5f-a3e8-704f916e6305.png">
 
 
       * There are two `GET` requests that return user information. To return all users, click the `GET All Users` request, then click on Send. To return a single user, click the `GET a User by Id` request. On the URL, enter the user's ID. 
           
-     
-     <img width="1383" alt="image6_get-all-users" src="https://user-images.githubusercontent.com/94569484/167379384-ecdc04d2-abf4-4d5f-8a0c-135232134db1.png">
+     <img width="1383" alt="image6_get-all-users" src="https://user-images.githubusercontent.com/94569484/167388708-bb5442b8-ae96-4b57-a843-fe50ad638190.png">
 
-      <img width="1389" alt="image7_get-single-user-id" src="https://user-images.githubusercontent.com/94569484/167379661-7c0a312b-0bff-4b75-b254-73932154ed87.png">
+
+<img width="1389" alt="image7_get-single-user-id" src="https://user-images.githubusercontent.com/94569484/167388751-ba7220b2-b3dc-48fc-80fd-b0e73ff44003.png">
 
          
       * To update a user by ID, click the `PUT` request. On the URL, enter the ID of the user whose information is going to be updated.
       
-      <img width="1385" alt="image8_update-user" src="https://user-images.githubusercontent.com/94569484/167380268-36081aad-4ce3-4ffa-b9bb-35ec5814e4b1.png">
+
+<img width="1385" alt="image8_update-user" src="https://user-images.githubusercontent.com/94569484/167388789-2dff6a1c-93df-44a5-961b-f211cb5052c6.png">
 
 
       * To delete a user by ID, click the `DEL` request and enter the user's ID. 
       
       * A message that reads, `"User and associated thoughts deleted!"` will appear if the user has been deleted from the database. If there is no such user or user ID in the system, the message, `"No user with this id!"` is shown.
       
-      
-<img width="1387" alt="image9_delete-user" src="https://user-images.githubusercontent.com/94569484/167380622-cc5fd326-0103-4d7e-9336-f5f9d2ddd5d5.png">
-John's user ID is entered on the URL.
+      <img width="1387" alt="image9_delete-user" src="https://user-images.githubusercontent.com/94569484/167388824-b13b966e-b833-46cc-a18f-8b4853e24482.png">
 
       * Click `GET All Users` to see if the user has been deleted. 
       
-      <img width="1387" alt="image10_john-is-deleted" src="https://user-images.githubusercontent.com/94569484/167380956-ebd96a22-a7cc-4304-bad3-1c7a4acf6c48.png">
-
+<img width="1387" alt="image10_john-is-deleted" src="https://user-images.githubusercontent.com/94569484/167388869-e827a7a1-164f-480a-82f3-f10348e65f3c.png">
 
   6. **Friend Routes** - a user can add a friend and delete a friend.
 
       * To add a friend, click the `POST` request. On the URL enter the user ID of the user who is adding a friend, then the user ID of the friend the user is adding. *(Note: Please see the section on Tests for the API routes.)*
 
-<img width="1385" alt="image11_add-friend" src="https://user-images.githubusercontent.com/94569484/167381456-751eb857-499d-44c9-b8aa-03ed509698be.png">
+<img width="1385" alt="image11_add-friend" src="https://user-images.githubusercontent.com/94569484/167388920-8c9cff8b-e646-4d67-88e8-13c11d5b567a.png">
+
 
       * To see the user's friends, click `GET All Users`. The ID of the friends the user added are listed under `"friends"`. The `"friendCount"` indicates the number of friends the user added.
 
       * To remove or delete a friend, click the `DEL` request. On the URL, enter the friend's ID. E.g., 
       
-      <img width="1385" alt="image12_delete-friend" src="https://user-images.githubusercontent.com/94569484/167381968-673d7f76-5982-4111-a19e-80abd4125fcf.png">
+<img width="1385" alt="image12_delete-friend" src="https://user-images.githubusercontent.com/94569484/167388958-30af7391-e9b0-4f9c-a2be-b54fe8f9b803.png">
+
 
       * To check if the friend has been removed from the user's friend list, click `GET All Users`.
       
-<img width="1390" alt="image13_deleted-friend" src="https://user-images.githubusercontent.com/94569484/167382228-b6a284e0-7fcb-4070-9ad8-d816195b6388.png">
+
+<img width="1390" alt="image13_deleted-friend" src="https://user-images.githubusercontent.com/94569484/167388985-9e24f636-c5b7-432b-b231-5f268d6e691b.png">
 
 
   7. **Thought Routes** - a user can create a thought, get all thoughts or a single thought by ID, update a thought by ID, and delete a thought by ID.
 
       * To create or add a thought, click the `POST` request. Enter the `"thoughtText"`, `"username"`, `"userID"` of the user creating the thought.
       
-      <img width="1385" alt="image14_create-thought" src="https://user-images.githubusercontent.com/94569484/167382476-fbdee05c-d84a-4c28-92f7-cf29efbd7d75.png">
+      <img width="1385" alt="image14_create-thought" src="https://user-images.githubusercontent.com/94569484/167389043-99bbab54-8548-47f8-8ba9-2fd05349d5dc.png">
+
      
       * To get all thoughts, click the `GET All Thoughts` request. All the thoughts that were created will appear, as well as the date and time they were created. Each created thought is assigned a unique thought ID. Click `GET All Users` to access the thought ID. 
 
+<img width="1377" alt="image17_get-all-users-thoughtId" src="https://user-images.githubusercontent.com/94569484/167389214-19aafda4-2d42-4162-838e-c15799b853ac.png">
 
-![image17_get-all-users-thoughtId](https://user-images.githubusercontent.com/94569484/167384643-394f3e4e-5340-404b-b3b1-9a04dfdcd98c.png)
 
       * To get a thought by ID, click the `GET a Thought by Id` request and enter the thought ID.
 
       * To update a thought, click the `PUT` request. On the URL, enter the thought ID. Enter the necessary changes on the text body. To see the changes, click `GET All Thoughts`. 
 
-<img width="1367" alt="image15_update-thought" src="https://user-images.githubusercontent.com/94569484/167383563-4dc8e2c4-23b3-46ea-a0bb-a8524d114370.png">
+<img width="1367" alt="image15_update-thought" src="https://user-images.githubusercontent.com/94569484/167389182-0abd3b7b-4f38-4d43-b122-775d0ae1bb8b.png">
 
-![image16_get-all-thoughts-updated](https://user-images.githubusercontent.com/94569484/167383848-fbed8b48-e5fb-4771-93a6-1f35eceae10c.png)
+<img width="1384" alt="image16_get-all-thoughts-updated" src="https://user-images.githubusercontent.com/94569484/167389245-c81c51ff-0c2c-4eb5-917d-ebbb79537397.png">
+
 
       * To delete a thought by ID, click the `DEL` request. On the URL, enter the thought ID that will be deleted.
       
-      <img width="1389" alt="image18_thought-deleted" src="https://user-images.githubusercontent.com/94569484/167385302-6e1a1e92-3876-4f59-9f62-44a0279f4890.png">
+
+<img width="1389" alt="image18_thought-deleted" src="https://user-images.githubusercontent.com/94569484/167389397-33baae83-f265-420e-afeb-86b249d92c99.png">
+
 
       * When the thought is successfully deleted, the text can no longer be found when you try to access it by clicking `GET All Thoughts.` The thought ID is also deleted when you click `GET All Users.`
       
@@ -181,18 +185,19 @@ John's user ID is entered on the URL.
 
       * To create a reaction, click the `POST` request. On the URL, enter the ID of the thought the user is reacting or commenting on. Then enter the `"reactionBody"` and `"username"` of the user creating the reaction.
       
-<img width="1387" alt="image18_create-reaction" src="https://user-images.githubusercontent.com/94569484/167386074-99f8df62-e5cd-4d33-b6d4-4b7cd43916b4.png">
+<img width="1387" alt="image18_create-reaction" src="https://user-images.githubusercontent.com/94569484/167389494-7120c0dd-1ac0-4d62-adc7-6625c16e1f6a.png">
 
 
       * Click on `GET All Thoughts`to see the reaction, the username of the user who created the reaction, the reaction ID, date and time the reaction is created, and the user's reaction count. This request will also show if the reaction has been deleted from the user's list. 
       
-      <img width="1374" alt="image20_get-all-thoughts-reactions" src="https://user-images.githubusercontent.com/94569484/167386319-f5c3dee9-43b7-405c-8aa9-04dc8b024064.png">
+
+<img width="1374" alt="image20_get-all-thoughts-reactions" src="https://user-images.githubusercontent.com/94569484/167389529-2fa7b9f0-730a-4c2f-9801-9d218ba630a1.png">
 
 
       * To delete a reaction, click the `DEL` request. On the URL, enter the ID of the thought the user created a reaction or commented on, then the reaction ID.  
       
-      
-<img width="1386" alt="image21_delete-reaction" src="https://user-images.githubusercontent.com/94569484/167387273-a7b9f65f-c237-44a2-b8a3-3abd444a2f3c.png">
+      <img width="1386" alt="image21_delete-reaction" src="https://user-images.githubusercontent.com/94569484/167389559-f612e303-6696-4052-a9c9-5ec8e1b0e66b.png">
+
 
       * The message, `"No thought with this id!"` will appear when a reaction is deleted or a reaction is not associated with a user ID. 
   
